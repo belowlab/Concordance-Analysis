@@ -11,6 +11,7 @@ file2 = open(sys.argv[2],"r")
 
 pval_thresh = .05 #### CHANGE TO THE PVALUE THRESHOLDS AS NEEDED
 
+###first summary statistics file
 file1.readline()
 first = True
 print("reading file 1")
@@ -48,7 +49,7 @@ for line in file1:
             file1_dic[spline[0]] = "-" ##### CHANGE spline[index] to the SNP column
 
 
-
+###second summary statistics file
 file2.readline()
 first = True
 print("reading file 2")
@@ -89,6 +90,7 @@ for line in file2:
 
 
 ###simulate concordance analysis to establish an expected percentage of overlap
+###simulation randomly shuffles the direction of effects of entire blocks (blocks defined by variants that are within 10kb and have the same direction of effect) for both ancestry groups
 sim = 25 #run the concordance analysis x times 
 conc_rates = []
 import random
