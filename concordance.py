@@ -9,7 +9,7 @@ sim2 = {}
 file1 = open(sys.argv[1],"r")
 file2 = open(sys.argv[2],"r")
 
-pval_thresh = .05 #### CHANGE TO THE PVALUE THRESHOLDS AS NEEDED
+pval_thresh = 0.005 #### CHANGE TO THE PVALUE THRESHOLDS AS NEEDED
 
 ###first summary statistics file
 file1.readline()
