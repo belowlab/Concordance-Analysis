@@ -8,7 +8,9 @@ To establish the expected rate of concordance of effects under the null, 25 perm
 
 Please see Shaw et al. 2021 for example use of this method: 10.1016/j.ajhg.2021.11.004
 
-# Input File Formatting for the Scripts to Work:
+# Input File Formatting for the Scripts to Work Without Editing:
+Files must be tab separated with the following columns
+
 File 1: 
 MARKERNAME	CHR	POS_b37	EA	NEA	EAF	EFFECT	STDERR	PVAL
 
