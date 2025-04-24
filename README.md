@@ -7,3 +7,10 @@ Concordance analysis compares summary statistics between our genetic ancestries-
 To establish the expected rate of concordance of effects under the null, 25 permutations were performed with random assignments of effect direction for each genomic region. Each simulation randomly shuffles the direction of effects of entire blocks (blocks defined by variants that are within 10kb and have the same direction of effect) for both genetic ancestry groups and calculates concordance based on the shuffled gwas summary statistics. The rate of concordance of effects between permuted datasets was used as the expected null concordance rate for the binomial t-test.
 
 Please see Shaw et al. 2021 for example use of this method: 10.1016/j.ajhg.2021.11.004
+
+# Input File Formatting for the Scripts to Work:
+File 1: 
+MARKERNAME	CHR	POS_b37	EA	NEA	EAF	EFFECT	STDERR	PVAL
+
+File 2:
+MARKERNAME	CHR	POS_b37	EA	NEA	EAF	EFFECT	STDERR	PVAL
